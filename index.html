@@ -81,54 +81,6 @@
     </div>
 
 
-  <!-- <script>
-    const urlBase = "https://swapi.dev/api/people/";
-
-    const fetchData = async (url) => {
-      const response = await fetch(url);
-      const data = await response.json();
-      return data;
-    };
-
-    const createCard = (nombre, estatura) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.innerHTML = `<p>${nombre} - ${estatura}</p>`;
-      return card;
-    };
-
-    const showCharacters = async (idInicio, idTermino) => {
-      const container = document.getElementById("personajesContainer");
-      container.innerHTML = "";
-
-      for (let i = idInicio; i <= idTermino; i++) {
-        const data = await fetchData(urlBase + i);
-        const personaje = new Personaje(data.name, data.height);
-        const card = createCard(personaje.nombre, personaje.estatura);
-        container.appendChild(card);
-      }
-    };
-
-    class Personaje {
-      constructor(nombre, estatura) {
-        this.nombre = nombre;
-        this.estatura = estatura;
-      }
-    }
-
-    document.getElementById("btn1").addEventListener("click", () => {
-      showCharacters(1, 5);
-    });
-
-    document.getElementById("btn2").addEventListener("click", () => {
-      const randomStart = Math.random() < 0.5 ? 6 : 7;
-      const randomEnd = randomStart + 4;
-      showCharacters(randomStart, randomEnd);
-    });
-
-    document.getElementById("btn3").addEventListener("click", () => {
-      showCharacters(12, 17); 
-    }); 
-  </script> -->
+  
 </body>
 </html>
